@@ -107,16 +107,44 @@
           <!-- Parallelogram card -->
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure>
-              <img
-                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
+              <img src="./images/parallelogram.png" alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+              <h2 class="card-title">Parallelogram</h2>
+              <p class="text-center text-3xl">Area (A) = b x h</p>
+              <div>
+                <div>
+                  <input
+                    class="w-24 text-2xl p-2 rounded-md"
+                    type="text"
+                    name=""
+                    id="parallelogram-base"
+                    placeholder="b"
+                  />
+                  <span class="ml-2 mr-2">cm</span>
+                  <input
+                    class="w-24 text-2xl p-2 rounded-md"
+                    type="text"
+                    name=""
+                    id="parallelogram-height"
+                    placeholder="h"
+                  />
+                  <span class="ml-2 mr-2">cm</span>
+                </div>
+                <div>
+                  <p class="text-2xl">
+                    Area: <span id="para-area"></span
+                    ><span>cm<sup>2</sup></span>
+                  </p>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button
+                  onclick="calculateParallelogramArea()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
@@ -145,5 +173,6 @@
     </main>
     <script src="./scripts/triangle-calculate.js"></script>
     <script src="./scripts/rectangle-calculate.js"></script>
+    <script src="./scripts/parallelogram-calculate.js"></script>
   </body>
 </html>
