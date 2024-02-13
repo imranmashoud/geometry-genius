@@ -20,6 +20,6 @@ function getInputValueById(inputFieldId) {
 }
 
 function setInnerTextById(elementId, anyName) {
-  const element = document.getElementById("pentagon-area");
+  const element = document.getElementById(elementId);
   element.innerText = anyName;
 }
