@@ -151,16 +151,46 @@
           <!-- Rhombus card -->
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure>
-              <img
-                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
+              <img src="./images/rhombus.png" alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+              <h2 class="card-title">Rhombus</h2>
+              <p class="text-center text-3xl">
+                Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub>
+              </p>
+              <div>
+                <div>
+                  <input
+                    class="w-24 text-2xl p-2 rounded-md"
+                    type="text"
+                    name=""
+                    id="diagonals-one"
+                    placeholder="d1"
+                  />
+                  <span class="ml-2 mr-4">cm</span>
+                  <input
+                    class="w-24 text-2xl p-2 rounded-md"
+                    type="text"
+                    name=""
+                    id="diagonals-two"
+                    placeholder="d2"
+                  />
+                  <span class="ml-2 mr-4">cm</span>
+                </div>
+                <div>
+                  <p class="text-2xl">
+                    Area: <span id="rhombus-area">0</span>
+                    <span>cm<sup>2</sup></span>
+                  </p>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button
+                  onclick="calculateRhombusArea()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
@@ -174,5 +204,6 @@
     <script src="./scripts/triangle-calculate.js"></script>
     <script src="./scripts/rectangle-calculate.js"></script>
     <script src="./scripts/parallelogram-calculate.js"></script>
+    <script src="./scripts/rhombus-calculate.js"></script>
   </body>
 </html>
